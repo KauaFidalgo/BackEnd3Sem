@@ -1,0 +1,57 @@
+CREATE DATABASE EventPlusBd
+
+USE EventPlusBd;
+GO
+
+
+CREATE TABLE Instituicao (
+    idInstituicao UNIQUEIDENTIFIER PRIMARY KEY DEFAULT ((NEWID())),
+    nomeFantasia NVARCHAR(100) NOT NULL,
+    endereco NVARCHAR(200) NOT NULL,
+    CNPJ NVARCHAR(14) NOT NULL UNIQUE
+);
+GO
+
+CREATE TABLE TipoEvento (
+    idTipoEvento UNIQUEIDENTIFIER PRIMARY KEY DEFAULT ((NEWID())),
+    titulo NVARCHAR(100) NOT NULL
+);
+
+CREATE TABLE TipoUsuario (
+    idTipoUsuario UNIQUEIDENTIFIER PRIMARY KEY DEFAULT ((NEWID())),
+    titulo NVARCHAR(100) NOT NULL
+);
+GO
+
+CREATE TABLE Usuario (
+    idUsuario UNIQUEIDENTIFIER PRIMARY KEY DEFAULT ((NEWID())),
+    nome NVARCHAR(100) NOT NULL,
+    email NVARCHAR(256) NOT NULL,
+    senha NVARCHAR(60) NOT NULL,
+    idTipoUsuario UNIQUEIDENTIFIER FOREIGN KEY REFERENCES TipoUsuario(idTipoUsuario)
+);
+
+CREATE TABLE Evento (
+    idEvento UNIQUEIDENTIFIER PRIMARY KEY DEFAULT ((NEWID())),
+    nome NVARCHAR(100) NOT NULL,
+    descricao TEXT NOT NULL,
+    dataEvento DATETIME NOT NULL,
+    idInstituicao UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Instituicao(idInstituicao),
+    idTipoEvento UNIQUEIDENTIFIER FOREIGN KEY REFERENCES TipoEvento(idTipoEvento)
+);
+
+CREATE TABLE Presenca (
+    idPresenca UNIQUEIDENTIFIER PRIMARY KEY DEFAULT ((NEWID())),
+    situacao BIT NOT NULL,
+    idEvento UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Evento(idEvento),
+    idUsuario UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Usuario(idUsuario)
+);
+
+CREATE TABLE ComentarioEvento (
+    idComentarioEvento UNIQUEIDENTIFIER PRIMARY KEY DEFAULT ((NEWID())),
+    descricao NVARCHAR(200) NOT NULL,
+    dataComentarioEvento DATETIME NOT NULL,
+    exibe BIT NOT NULL,
+    idEvento UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Evento(idEvento),
+    idUsuario UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Usuario(idUsuario)
+);
