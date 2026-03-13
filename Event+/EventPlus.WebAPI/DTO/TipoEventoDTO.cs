@@ -6,5 +6,5 @@ public class TipoEventoDTO
 {
     [Required(ErrorMessage = "O titulo do tipo de evento é obrigatorio!")]
     public string? Titulo { get; set; }
-    
+ 
 }

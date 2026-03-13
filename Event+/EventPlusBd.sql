@@ -1,4 +1,5 @@
-CREATE DATABASE EventPlusBd
+CREATE DATABASE EventPlusBd;
+GO
 
 USE EventPlusBd;
 GO

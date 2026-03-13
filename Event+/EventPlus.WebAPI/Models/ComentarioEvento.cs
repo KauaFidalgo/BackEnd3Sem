@@ -11,22 +11,23 @@ public partial class ComentarioEvento
 {
     [Key]
     [Column("idComentarioEvento")]
-    public int IdComentarioEvento { get; set; }
+    public Guid IdComentarioEvento { get; set; }
 
-    [Column("descricao", TypeName = "text")]
-    public string? Descricao { get; set; }
+    [Column("descricao")]
+    [StringLength(200)]
+    public string Descricao { get; set; } = null!;
 
-    [Column("data")]
-    public DateOnly? Data { get; set; }
+    [Column("dataComentarioEvento", TypeName = "datetime")]
+    public DateTime DataComentarioEvento { get; set; }
 
     [Column("exibe")]
-    public bool? Exibe { get; set; }
+    public bool Exibe { get; set; }
 
     [Column("idEvento")]
-    public int? IdEvento { get; set; }
+    public Guid? IdEvento { get; set; }
 
     [Column("idUsuario")]
-    public int? IdUsuario { get; set; }
+    public Guid? IdUsuario { get; set; }
 
     [ForeignKey("IdEvento")]
     [InverseProperty("ComentarioEventos")]

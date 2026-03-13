@@ -11,18 +11,16 @@ public partial class Presenca
 {
     [Key]
     [Column("idPresenca")]
-    public int IdPresenca { get; set; }
+    public Guid IdPresenca { get; set; }
 
     [Column("situacao")]
-    [StringLength(50)]
-    [Unicode(false)]
-    public string? Situacao { get; set; }
+    public bool Situacao { get; set; }
 
     [Column("idEvento")]
-    public int? IdEvento { get; set; }
+    public Guid? IdEvento { get; set; }
 
     [Column("idUsuario")]
-    public int? IdUsuario { get; set; }
+    public Guid? IdUsuario { get; set; }
 
     [ForeignKey("IdEvento")]
     [InverseProperty("Presencas")]
