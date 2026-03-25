@@ -35,13 +35,13 @@ public class ComentarioEventoController : ControllerBase
             if (string.IsNullOrEmpty(comentarioEvento.Descricao))
                 return BadRequest("A descrição é obrigatória!");
 
-            var request = new AnalyzeTextOptions(comentarioEvento.Descricao);
+            //var request = new AnalyzeTextOptions(comentarioEvento.Descricao);
 
-            Response<AnalyzeTextResult> response =
-                await _contentSafetyClient.AnalyzeTextAsync(request);
+            //Response<AnalyzeTextResult> response =
+            //await _contentSafetyClient.AnalyzeTextAsync(request);
 
-            bool temConteudoImproprio =
-                response.Value.CategoriesAnalysis.Any(c => c.Severity > 0);
+
+            bool temConteudoImproprio = false;
 
             var novoComentario = new ComentarioEvento
             {
