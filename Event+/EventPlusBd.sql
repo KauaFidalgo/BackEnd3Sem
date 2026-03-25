@@ -56,3 +56,5 @@ CREATE TABLE ComentarioEvento (
     idEvento UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Evento(idEvento),
     idUsuario UNIQUEIDENTIFIER FOREIGN KEY REFERENCES Usuario(idUsuario)
 );
+
+SELECT * FROM EventPlusBd
