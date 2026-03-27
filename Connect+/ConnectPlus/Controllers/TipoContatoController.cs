@@ -47,12 +47,12 @@ public class TipoContatoController : ControllerBase
      {
             try
             {
-                var novoTipoContato = new TipoContato
-                {
-                    Titulo = tipoContato.Titulo!
-                };
-    
-                _tipoContatoRepository.Cadastrar(novoTipoContato);
+            var novoTipoContato = new TipoContato
+            {
+                Titulo = tipoContato.Titulo!
+            };
+
+            _tipoContatoRepository.Cadastrar(novoTipoContato);
     
                 return StatusCode(201, novoTipoContato);
             }

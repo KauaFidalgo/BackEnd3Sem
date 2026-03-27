@@ -1,22 +1,24 @@
-CREATE DATABASE ConnectPlus
+CREATE DATABASE Connect_Plus
 
 GO
-USE ConnectPlus
+USE Connect_Plus
 
 CREATE TABLE TipoContato (
-    IdTipoContato INT PRIMARY KEY IDENTITY,
+    IdTipoContato UNIQUEIDENTIFIER PRIMARY KEY DEFAULT ((NEWID())),
     Titulo VARCHAR(100) NOT NULL
 );
+SELECT * FROM TipoContato
 GO
 
 CREATE TABLE Contato (
-    IdContato INT PRIMARY KEY IDENTITY,
+    IdContato UNIQUEIDENTIFIER PRIMARY KEY DEFAULT ((NEWID())), 
     Nome VARCHAR(150) NOT NULL,
     FormaContato VARCHAR(150) NOT NULL,
     CaminhoImagem VARCHAR(255),
-    IdTipoContato INT NOT NULL,
-
-    FOREIGN KEY (IdTipoContato)
-    REFERENCES TipoContato(IdTipoContato)
+    
+    IdTipoContato UNIQUEIDENTIFIER FOREIGN KEY REFERENCES TipoContato(IdTipoContato)
 );
+SELECT * FROM Contato
 GO
+
+

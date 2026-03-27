@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4oxDXCrHGXQ=",
+  "dgSpecHash": "0lAV0QernGk=",
   "success": true,
-  "projectFilePath": "C:\\Users\\55435579813\\Desktop\\BackEnd3Sem\\Event+\\ConnectPlus\\ConnectPlus.csproj",
+  "projectFilePath": "C:\\Users\\55435579813\\Desktop\\BackEnd3Sem\\Connect+\\ConnectPlus\\ConnectPlus.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\55435579813\\.nuget\\packages\\azure.core\\1.47.1\\azure.core.1.47.1.nupkg.sha512",
     "C:\\Users\\55435579813\\.nuget\\packages\\azure.identity\\1.14.2\\azure.identity.1.14.2.nupkg.sha512",

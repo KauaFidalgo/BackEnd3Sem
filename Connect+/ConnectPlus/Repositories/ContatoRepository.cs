@@ -31,7 +31,7 @@ public class ContatoRepository : IContatoRepository
         if (contato != null)
         {
             contato.Nome = contatoAtualizado.Nome!;
-            contato.DadosDoContato = contatoAtualizado.DadosDoContato!;
+            contato.FormaContato = contatoAtualizado.FormaContato!;
             contato.CaminhoImagem = contatoAtualizado.CaminhoImagem!;
             contato.IdTipoContato = contatoAtualizado.IdTipoContato;
 

@@ -29,7 +29,7 @@
                   "Nome": {
                     "type": "string"
                   },
-                  "DadosDoContato": {
+                  "FormaContato": {
                     "type": "string"
                   },
                   "CaminhoImagem": {
@@ -37,8 +37,8 @@
                     "format": "binary"
                   },
                   "IdTipoContato": {
-                    "type": "integer",
-                    "format": "int32"
+                    "type": "string",
+                    "format": "uuid"
                   }
                 }
               },
@@ -46,7 +46,7 @@
                 "Nome": {
                   "style": "form"
                 },
-                "DadosDoContato": {
+                "FormaContato": {
                   "style": "form"
                 },
                 "CaminhoImagem": {
@@ -122,7 +122,7 @@
                   "Nome": {
                     "type": "string"
                   },
-                  "DadosDoContato": {
+                  "FormaContato": {
                     "type": "string"
                   },
                   "CaminhoImagem": {
@@ -130,8 +130,8 @@
                     "format": "binary"
                   },
                   "IdTipoContato": {
-                    "type": "integer",
-                    "format": "int32"
+                    "type": "string",
+                    "format": "uuid"
                   }
                 }
               },
@@ -139,7 +139,7 @@
                 "Nome": {
                   "style": "form"
                 },
-                "DadosDoContato": {
+                "FormaContato": {
                   "style": "form"
                 },
                 "CaminhoImagem": {

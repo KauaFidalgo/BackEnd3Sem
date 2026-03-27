@@ -28,16 +28,18 @@ public partial class EventContext : DbContext
     {
         modelBuilder.Entity<Contato>(entity =>
         {
-            entity.HasKey(e => e.IdContato).HasName("PK__Contato__2AC4F064AE667442");
+            entity.HasKey(e => e.IdContato).HasName("PK__Contato__2AC4F064D55FA3BD");
 
-            entity.HasOne(d => d.IdTipoContatoNavigation).WithMany(p => p.Contatos)
-                .OnDelete(DeleteBehavior.ClientSetNull)
-                .HasConstraintName("FK__Contato__IdTipoC__5EBF139D");
+            entity.Property(e => e.IdContato).HasDefaultValueSql("(newid())");
+
+            entity.HasOne(d => d.IdTipoContatoNavigation).WithMany(p => p.Contatos).HasConstraintName("FK__Contato__IdTipoC__06CD04F7");
         });
 
         modelBuilder.Entity<TipoContato>(entity =>
         {
-            entity.HasKey(e => e.IdTipoContato).HasName("PK__TipoCont__8D18FEBD5628A72E");
+            entity.HasKey(e => e.IdTipoContato).HasName("PK__TipoCont__8D18FEBD597B0D5A");
+
+            entity.Property(e => e.IdTipoContato).HasDefaultValueSql("(newid())");
         });
 
         OnModelCreatingPartial(modelBuilder);

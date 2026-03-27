@@ -45,7 +45,7 @@ public class ContatoController : ControllerBase
             var novoContato = new Contato
             {
                 Nome = Contato.Nome!,
-                DadosDoContato = Contato.DadosDoContato,
+                FormaContato = Contato.FormaContato,
                 CaminhoImagem = nomeArquivo, // Aqui salva APENAS a string (o nome da foto)
                 IdTipoContato = Contato.IdTipoContato // Não esqueça da chave estrangeira do DTO
             };

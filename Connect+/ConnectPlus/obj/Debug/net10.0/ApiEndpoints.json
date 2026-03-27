@@ -13,7 +13,7 @@
         "IsRequired": false
       },
       {
-        "Name": "DadosDoContato",
+        "Name": "FormaContato",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -24,7 +24,7 @@
       },
       {
         "Name": "IdTipoContato",
-        "Type": "System.Int32",
+        "Type": "System.Guid",
         "IsRequired": false
       }
     ],
@@ -75,7 +75,7 @@
         "IsRequired": false
       },
       {
-        "Name": "DadosDoContato",
+        "Name": "FormaContato",
         "Type": "System.String",
         "IsRequired": false
       },
@@ -86,7 +86,7 @@
       },
       {
         "Name": "IdTipoContato",
-        "Type": "System.Int32",
+        "Type": "System.Guid",
         "IsRequired": false
       }
     ],

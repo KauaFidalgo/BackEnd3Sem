@@ -3620,11 +3620,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\55435579813\\Desktop\\BackEnd3Sem\\Event+\\ConnectPlus\\ConnectPlus.csproj",
+      "projectUniqueName": "C:\\Users\\55435579813\\Desktop\\BackEnd3Sem\\Connect+\\ConnectPlus\\ConnectPlus.csproj",
       "projectName": "ConnectPlus",
-      "projectPath": "C:\\Users\\55435579813\\Desktop\\BackEnd3Sem\\Event+\\ConnectPlus\\ConnectPlus.csproj",
+      "projectPath": "C:\\Users\\55435579813\\Desktop\\BackEnd3Sem\\Connect+\\ConnectPlus\\ConnectPlus.csproj",
       "packagesPath": "C:\\Users\\55435579813\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\55435579813\\Desktop\\BackEnd3Sem\\Event+\\ConnectPlus\\obj\\",
+      "outputPath": "C:\\Users\\55435579813\\Desktop\\BackEnd3Sem\\Connect+\\ConnectPlus\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

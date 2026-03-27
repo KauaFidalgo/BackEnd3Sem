@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 using Microsoft.EntityFrameworkCore;
 
 namespace ConnectPlus.Models;
@@ -10,7 +11,7 @@ namespace ConnectPlus.Models;
 public partial class TipoContato
 {
     [Key]
-    public int IdTipoContato { get; set; }
+    public Guid IdTipoContato { get; set; }
 
     [StringLength(100)]
     [Unicode(false)]
