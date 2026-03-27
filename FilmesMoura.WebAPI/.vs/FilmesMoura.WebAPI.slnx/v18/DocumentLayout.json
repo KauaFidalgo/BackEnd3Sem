@@ -34,8 +34,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -44,7 +48,7 @@
               "RelativeDocumentMoniker": "Controllers\\GeneroController.cs",
               "ToolTip": "C:\\Users\\55435579813\\Desktop\\BackEnd3Sem\\FilmesMoura.WebAPI\\Controllers\\GeneroController.cs",
               "RelativeToolTip": "Controllers\\GeneroController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-06T13:03:12.061Z",
               "EditorCaption": ""
@@ -59,8 +63,7 @@
               "RelativeToolTip": "Controllers\\LoginController.cs",
               "ViewState": "AgIAACcAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T13:02:11.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-06T13:02:11.551Z"
             },
             {
               "$type": "Document",
@@ -72,8 +75,7 @@
               "RelativeToolTip": "Controllers\\FilmeController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T13:02:05.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-06T13:02:05.208Z"
             },
             {
               "$type": "Document",
@@ -85,8 +87,7 @@
               "RelativeToolTip": "Models\\Filme.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T12:58:57.351Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-06T12:58:57.351Z"
             },
             {
               "$type": "Document",
@@ -98,12 +99,7 @@
               "RelativeToolTip": "Program.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAAAAwAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T12:03:34.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+              "WhenOpened": "2026-03-06T12:03:34.367Z"
             },
             {
               "$type": "Document",
@@ -115,8 +111,7 @@
               "RelativeToolTip": "BdContectFilme\\FilmeContext.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAzwBgAAABRAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-06T11:55:43.33Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-06T11:55:43.33Z"
             }
           ]
         }

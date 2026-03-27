@@ -13,6 +13,7 @@ namespace FilmesMoura.WebAPI.Controllers
 
         public GeneroController(IGeneroRepository generoRepository)
         {
+
             _generoRepository = generoRepository;
         }
 
