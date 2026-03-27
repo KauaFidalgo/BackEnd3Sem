@@ -113,6 +113,7 @@ public class TipoUsuarioController : ControllerBase
     {
         try
         {
+
             _tipoUsuarioRepository.Deletar(id);
 
             return NoContent();

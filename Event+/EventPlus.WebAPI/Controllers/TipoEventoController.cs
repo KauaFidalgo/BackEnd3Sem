@@ -18,6 +18,7 @@ public class TipoEventoController : ControllerBase
         _tipoEventoRepository = tipoEventoRepository;
     }
 
+
     /// <summary>
     /// Endpoint da API para listar os tipos de eventos cadastrados no banco de dados, retornando uma resposta HTTP 200 (OK) com a lista de tipos de eventos ou uma resposta HTTP 400 (Bad Request) em caso de erro, contendo a mensagem de erro.
     /// </summary>
@@ -33,6 +34,7 @@ public class TipoEventoController : ControllerBase
         catch (Exception erro)
         {
 
+            
             return BadRequest(erro.Message);
         }
     }
